@@ -1,0 +1,8 @@
+print("WELCOME TO THE WORLD OF PROGRAM")
+print(4)
+print(" ")
+print(("HELO PYTHON\n"))
+print(" ")
+print("HELLO",5)
+print(" ")
+print("WELCOME TO ",end="*")
