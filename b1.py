@@ -1,8 +1,39 @@
-print("WELCOME TO THE WORLD OF PROGRAM")
-print(4)
-print(" ")
-print(("HELO PYTHON\n"))
-print(" ")
-print("HELLO",5)
-print(" ")
-print("WELCOME TO ",end="*")
+import keyword
+person_name  = input("enter your name ")
+goal_name = input("type your goal ")
+target_month = input("Enter the target month: ")
+daily_minutes = 30
+
+# Print multiple values together
+
+print("\nName:", person_name)
+print("Goal:", goal_name)
+print("Target Month:", target_month)
+print("Daily Practice:", daily_minutes, "minutes")
+
+# Start a new line using \n
+print("\nMy Personal Goal Plan\n")
+
+# Change how the print statement ends
+print("Goal Status:", end=" ")
+print("Not Started")
+
+print("Progress Reminder:", end=" - ")
+print("Practice every day!")
+
+# Display the complete goal summary
+
+print(
+    "\n",
+    person_name,
+    "plans to work on",
+    goal_name,
+    "for",
+    daily_minutes,
+    "minutes every day."
+)
+
+
+#pRINT PYTHONS RESERVED WORDS
+print("\nPython keywords are...\n")
+print(keyword.kwlist)
