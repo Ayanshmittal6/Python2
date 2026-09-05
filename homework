@@ -1,0 +1,35 @@
+
+count = 0
+counter = 0
+print(("Lets complete your homework"))
+while count < 3:
+    count = count + 1
+    if count == 1:
+        print("Complete your Science homework")
+    elif count == 2:
+        print("Complete your Maths homework")
+    elif count == 3:
+        print("Complete your English homework")
+a = input("Have you done your Science homework? (yes or no): ")
+if a == ("no"):
+    print("Do your homework fast.")
+    counter = counter + 1
+else:
+    print("You have completed your homework. ")
+b = input("Have you done your Maths homework? (yes or no): ")
+if b == ("no"):
+    print("Do your homework fast.")
+    counter = counter + 1
+else:
+    print("You have completed Maths your homework. ")
+c = input("Have you done your English homework? (yes or no): ")
+if c == ("no"):
+    print("Do your homework fast.")
+    counter = counter + 1
+else:
+    print("You have completed your English homework. ")
+
+if counter > 0:
+    print("Your ",counter, " homework are left")
+else:
+    print("All your homework is complete")
