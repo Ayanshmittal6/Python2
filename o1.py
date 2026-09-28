@@ -1,34 +1,22 @@
-#activity 1
-def t_b(b,t):
-    to = b*(1+0.01*t)
-    to= round(to,2)
-    print("Total amont to give :",to)
-t_b(150,20)
-
-
-#activity 2
-def c(n):
-    return n*n*n
-def b_3 (n):
-    if n%3==0:
-        return(c (n))
-    else:
-        return False
-print(b_3(9))
-print(b_3(4))
-
-
-#activity 3
-def f (n):
-    '''this is recursive function'''
-    if n==0 or n==1:
-        return 1
-    else:
-        return n*f(n-1)
-print(f,__doc__)
-print("the factorial of 0 : ",f(0))
-print("the factorial of 1 : ",f(1))
-print("the factorial of 2 : ",f(2))
-print("the factorial of 3 : ",f(3))
-print("the factorial of 4 : ",f(4))
-print("the factorial of 5 : ",f(5))
+def G_F():
+    print("WELCOME TO ART SUPPLIES STORE")
+G_F()
+p_p_c = float(input("enter cost of 1 per art item"))
+p_c = int(input("enter no of art items sold "))
+def c_t(p,c):
+    total = p*c
+    return total
+t_c = c_t(p_p_c , p_c)
+r_t = round(t_c,2)
+a_p = float(input("enter amount paid by custmor "))
+def c_c(p,t):
+    c = p - t
+    return c
+c_d = c_c(a_p, r_t)
+print("======================")
+print("total cost : ",r_t)
+print ("art items sold ", p_c)
+print ("amount paid by custmor ", a_p)
+print ("amount to pay back is : ", c_d)
+print("======================")
+print("thank you")
